@@ -52,7 +52,7 @@ TOKEN_FIELDS_EXCLUDED_FROM_PERSISTENCE = ['familyName',
                                           'isUserIdDisplayable',
                                           'tenantId']
 
-_CLIENT_ID = '04b07795-8ddb-461a-bbee-02f9e1bf7b46'
+_CLIENT_ID = os.environ.get('AZURE_CLIENT_ID', None) or '04b07795-8ddb-461a-bbee-02f9e1bf7b46'
 _COMMON_TENANT = 'common'
 
 
